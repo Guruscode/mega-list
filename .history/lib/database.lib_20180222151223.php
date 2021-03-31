@@ -1,0 +1,73 @@
+<?php
+/**
+* A simple PHP MySQL database class
+*
+* Database details are kept in seprate config file
+* for security, database connection is established
+* upon instantiation, class has a query method to
+* run all kinds of queries.
+*
+* fetch() methods stores result set in an array
+* MySQL connection is closed with destruct method.
+*
+* @author waqar <waqar3@gmail.com>
+* @copyright Waqar
+* @license GNU GENERAL PUBLIC LICENSE Version 3
+*/
+
+class Database  {
+
+    private $dbuser = 'root';
+    private $dbpass = 'root';
+    private $dbname = 'anakle';
+    private $dbport = 3306;
+    private $dbhost = 'localhost';
+    private $db;  
+    
+    public $result;
+
+    /*
+	Get an instance of the Database
+	@return void
+    */
+    
+    public function __construct() {
+
+        
+        $this->db = new mysqli($this->dbhost, $this->dbuser, $this->dbpass, $this->dbname);
+
+        if (mysqli_connect_errno()) {
+            
+            trigger_error("Failed to conencto to MySQL: " . mysqli_connect_error(), E_USER_ERROR);
+           
+        }
+        else{
+            return $this->db;
+        }
+               
+    }
+
+    public function query($query){
+
+        $this->result = $this->db->query($query);
+        return $this->result;
+
+    }
+
+    public function fetch(){
+
+        if(!$this->result){
+            return "no results";
+        }
+
+        while($row = $this->result->fetch_assoc()){
+            $rows[] = $row;
+        }
+
+        return $rows;
+
+    }
+ 
+    
+
+}
