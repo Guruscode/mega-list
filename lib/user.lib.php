@@ -6,9 +6,7 @@ require_once('session.lib.php');
 * Basic User Class Extending Database
 *
 *
-* @author Richard isaac <Olurichardisaac@gmail.com>
-* @copyright RichardIsaac
-* @license GNU GENERAL PUBLIC LICENSE Version 3
+
 */
 
 class User extends Database  {
