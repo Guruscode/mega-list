@@ -4,9 +4,7 @@
 * Basic Session Class 
 *
 *
-* @author Richard isaac <Olurichardisaac@gmail.com>
-* @copyright RichardIsaac
-* @license GNU GENERAL PUBLIC LICENSE Version 3
+
 */
 
 class Session {
