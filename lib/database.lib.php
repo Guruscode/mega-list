@@ -6,9 +6,6 @@
 * fetch() methods stores result set in an array
 * MySQL connection is closed with destruct method.
 *
-* @author Richard isaac <Olurichardisaac@gmail.com>
-* @copyright RichardIsaac
-* @license GNU GENERAL PUBLIC LICENSE Version 3
 */
 
 
