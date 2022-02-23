@@ -4,9 +4,7 @@
 * File should follow the naming convention,
 * [name].lib.php
 *
-* @author Richard isaac <Olurichardisaac@gmail.com>
-* @copyright RichardIsaac
-* @license GNU GENERAL PUBLIC LICENSE Version 3
+
 */
 
 
