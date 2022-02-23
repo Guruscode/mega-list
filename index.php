@@ -93,7 +93,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="addModalLongTitle">Create Store</h5>
+        <h5 class="modal-title" id="addModalLongTitle">Create List</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -101,7 +101,7 @@
       <span class="alert" id="store-message"></span>
       <div class="modal-body">
 
-            <div class="col-md-12">Store Name</div><div class="col-md-6"><input type="text" id="store_name" class="form-control" /></div>
+            <div class="col-md-12">List Name</div><div class="col-md-6"><input type="text" id="store_name" class="form-control" /></div>
             <div class="col-md-6">Address</div><div class="col-md-6"><textarea id="store_address" class="form-control"></textarea></div>
             
       </div>
