@@ -7,9 +7,7 @@ require_once('session.lib.php');
 *
 *
 *
-* @author Richard isaac <Olurichardisaac@gmail.com>
-* @copyright RichardIsaac
-* @license GNU GENERAL PUBLIC LICENSE Version 3
+
 */
 
 class Store extends Database  {
